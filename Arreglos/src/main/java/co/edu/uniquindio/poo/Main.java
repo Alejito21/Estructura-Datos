@@ -9,6 +9,11 @@ import java.util.ArrayList;
 public class Main {
     public static void main(String[] args) {
         int[] num = new int[]{12, 56, 200, 76};
+        int [][] matriz = {
+                {1, 2, 3, 4},
+                {5, 6, 7, 8},
+                {9, 10, 11, 12},
+        };
         List<Integer> listaNumeros = new ArrayList<>();
         listaNumeros.add(777);
         listaNumeros.add(1);
@@ -16,6 +21,8 @@ public class Main {
         listaNumeros.add(40);
         cabezaCola(listaNumeros);
         recorrerArreglo(num, 0);
+        recorrerMatriz(matriz, 0, 0);
+
     }
 
     public static void cabezaCola(List<Integer> lista) {
@@ -37,6 +44,20 @@ public class Main {
         } else {
             System.out.println("Arreglo no encontrado");
         }
+    }
+
+    public static void recorrerMatriz(int[][] matriz, int fila, int columna) {
+        if (fila == matriz.length) {
+            return;
+        }
+        if (columna == matriz[fila].length) {
+            System.out.println();
+            recorrerMatriz(matriz, fila + 1, 0);
+            return;
+        }
+
+        System.out.println(matriz[fila][columna] + "\t");
+        recorrerMatriz(matriz, fila, columna+1);
     }
 
 }
