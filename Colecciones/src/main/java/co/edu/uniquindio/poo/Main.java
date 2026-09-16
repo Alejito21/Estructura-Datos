@@ -5,7 +5,6 @@ package co.edu.uniquindio.poo;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
-import java.util.List;
 
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
