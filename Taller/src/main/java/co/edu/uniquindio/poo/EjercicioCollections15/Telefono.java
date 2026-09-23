@@ -1,4 +1,4 @@
-package co.edu.uniquindio.poo.Ejercicio5;
+package co.edu.uniquindio.poo.EjercicioCollections15;
 
 import java.util.HashMap;
 import java.util.Map;

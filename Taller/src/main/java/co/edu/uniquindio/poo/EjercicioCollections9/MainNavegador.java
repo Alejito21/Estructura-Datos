@@ -1,4 +1,4 @@
-package co.edu.uniquindio.poo.Ejercicio3;
+package co.edu.uniquindio.poo.EjercicioCollections9;
 
 public class MainNavegador {
 

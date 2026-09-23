@@ -1,4 +1,4 @@
-package co.edu.uniquindio.poo.Ejercicio2;
+package co.edu.uniquindio.poo.EjercicioCollections6;
 
 public class MainSupermercado {
     public static void main(String[] args) {

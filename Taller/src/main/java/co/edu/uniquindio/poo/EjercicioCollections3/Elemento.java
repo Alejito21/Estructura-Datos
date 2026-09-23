@@ -1,4 +1,4 @@
-package co.edu.uniquindio.poo.Ejercicio1;
+package co.edu.uniquindio.poo.EjercicioCollections3;
 
 import java.util.Objects;
 

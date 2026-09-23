@@ -1,6 +1,5 @@
-package co.edu.uniquindio.poo.Ejercicio1;
+package co.edu.uniquindio.poo.EjercicioCollections3;
 
-import java.util.Collections;
 import java.util.HashSet;
 import java.util.Iterator;
 

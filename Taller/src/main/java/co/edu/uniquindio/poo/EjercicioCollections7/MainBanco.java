@@ -1,4 +1,4 @@
-package co.edu.uniquindio.poo.Ejercicio4;
+package co.edu.uniquindio.poo.EjercicioCollections7;
 
 public class MainBanco {
     public static void main(String[] args) {

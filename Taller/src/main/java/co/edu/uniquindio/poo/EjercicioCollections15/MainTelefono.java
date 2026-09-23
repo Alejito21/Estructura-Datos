@@ -1,4 +1,4 @@
-package co.edu.uniquindio.poo.Ejercicio5;
+package co.edu.uniquindio.poo.EjercicioCollections15;
 
 public class MainTelefono {
     public static void main(String[] args) {
