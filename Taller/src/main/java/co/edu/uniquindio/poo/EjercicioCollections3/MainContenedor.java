@@ -2,7 +2,16 @@ package co.edu.uniquindio.poo.EjercicioCollections3;
 
 import java.util.Iterator;
 
+/**
+ * Clase de demostración del {@link Contenedor}: agrega elementos y los recorre
+ * con {@link Iterator} y con el bucle for-each.
+ */
 public class MainContenedor {
+    /**
+     * Punto de entrada: crea un contenedor, agrega elementos y los imprime.
+     *
+     * @param args argumentos de línea de comandos (no utilizados)
+     */
     public static void main(String[] args) {
         Contenedor contenedor = new Contenedor();
         Elemento e = new Elemento("A", 01);
@@ -20,11 +29,8 @@ public class MainContenedor {
         }
 
         System.out.println("\n");
-        for(Elemento elemento : contenedor) {
+        for (Elemento elemento : contenedor) {
             System.out.println(elemento);
         }
-
-
-
     }
 }

@@ -1,6 +1,14 @@
 package co.edu.uniquindio.poo.EjercicioCollections6;
 
+/**
+ * Clase de demostración del {@link Supermercado}: agrega productos, busca uno y ordena por nombre.
+ */
 public class MainSupermercado {
+    /**
+     * Punto de entrada de la demostración.
+     *
+     * @param args argumentos de línea de comandos (no utilizados)
+     */
     public static void main(String[] args) {
         Supermercado supermercado = new Supermercado();
         Producto uno = new Producto("01", "Fab", 25000, 10);
