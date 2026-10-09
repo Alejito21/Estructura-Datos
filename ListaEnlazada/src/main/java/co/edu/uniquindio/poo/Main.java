@@ -23,6 +23,12 @@ public class Main {
 
         lista.removerPosicion(1);
         System.out.println(lista);
+        lista.invertir();
+        System.out.println(lista);
+        lista.agregarPrimero("Nico");
+        lista.eliminarDuplicados();
+        System.out.println(lista);
+        lista.dividirLista();
 
 
     }

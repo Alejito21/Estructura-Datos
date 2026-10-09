@@ -1,5 +1,7 @@
 package co.edu.uniquindio.poo.Model;
 
+import java.util.ArrayList;
+
 public class ListaEnlazada <T>{
     private Nodo<T> inicio;
     private int tam;
@@ -94,6 +96,77 @@ public class ListaEnlazada <T>{
         return removido.getData();
 
     }
+
+
+    //Combinar elementos de dos listas enlazadas
+    public ListaEnlazada<T> combinarListasIntercalar(ListaEnlazada<T> lista1, ListaEnlazada<T> lista2){
+        ListaEnlazada <T> nueva = new ListaEnlazada<>();
+        Nodo <T> a = lista1.inicio;
+        Nodo <T> b = lista2.inicio;
+        while (a != null || b != null) {
+            if (a != null) {
+                nueva.agregarPrimero(a.getData());
+                a = a.getNext();
+            }
+            if (b != null) {
+                nueva.agregarPrimero(b.getData());
+                b = b.getNext();
+            }
+        }
+        return nueva;
+    }
+
+    //Invertir las posiciones de la lista
+    public void invertir(){
+        Nodo <T> anterior = null;
+        Nodo <T> actual = inicio;
+        while (actual != null) {
+            Nodo <T> siguiente = actual.getNext();
+            actual.setNext(anterior);
+            anterior = actual;
+            actual = siguiente;
+
+        }
+        inicio = anterior;
+    }
+
+    //Eliminar datos duplicados
+    public void eliminarDuplicados(){
+        Nodo <T> actual = inicio;
+        while (actual != null) {
+            Nodo <T> referencia = actual;
+                while (referencia.getNext() != null) {
+                    if (referencia.getNext().getData() == actual.getData()) {
+                        referencia.setNext(referencia.getNext().getNext());
+                    } else {
+                        referencia = referencia.getNext();
+                    }
+                }
+                actual = actual.getNext();
+        }
+    }
+
+    //Dividir una lista en una de pares y otra de impares
+    public void dividirLista(){
+        ListaEnlazada <T> pares = new ListaEnlazada<>();
+        ListaEnlazada <T> impares = new ListaEnlazada<>();
+        int posicion = 1;
+        Nodo <T> actual = inicio;
+        while (actual != null) {
+            if (posicion %2 == 0) {
+                pares.agregarPrimero(actual.getData());
+            }else {
+                impares.agregarPrimero(actual.getData());
+            }
+            actual = actual.getNext();
+            posicion++;
+        }
+        System.out.println(impares);
+        System.out.println(pares);
+
+    }
+
+
 
 
     @Override
